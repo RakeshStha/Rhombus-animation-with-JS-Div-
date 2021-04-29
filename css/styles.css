@@ -1,0 +1,36 @@
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* body{
+    background-color: aquamarine;
+} */
+h1{
+    margin: 20px;
+    text-align: center;
+}
+
+.horizontal {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.container {
+    margin: 40px;
+    position: relative;
+    background-color: teal;
+    border: 2px solid black;
+    height: 500px;
+    width: 500px; 
+}
+
+.box_1 {
+    position: absolute;
+    top: 200px;
+    background-color: antiquewhite;
+    height: 80px;
+    width: 80px;
+}
