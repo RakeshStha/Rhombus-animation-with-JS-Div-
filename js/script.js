@@ -5,7 +5,7 @@ function movement(){
     var positionY = 200;
 
     
-    var fst = setInterval(First, 10);
+    var fst = setInterval(First, 1);
     function First(){
     
     positionX += 1;
@@ -16,7 +16,7 @@ function movement(){
     if (positionX == 215 && positionY == 415 ){  //&& positionY == 415
         clearInterval(fst);
         
-       var  y =  setInterval(Move,10); //415
+       var  y =  setInterval(Move,1); //415
         function Move(){
             positionX += 1;
             positionY -=1;
@@ -25,7 +25,7 @@ function movement(){
             if (positionX == 415){
                 clearInterval(y);
                 
-                var x = setInterval(X_Move, 10); //630
+                var x = setInterval(X_Move, 1); //630
                 function X_Move(){
                     positionX -= 1;
                     positionY -= 1;
@@ -33,7 +33,7 @@ function movement(){
                     box_1.style.top = positionY + "px";
                     if (positionX == 200){
                         clearInterval(x);
-                        var xy = setInterval(top_Move, 10); //630
+                        var xy = setInterval(top_Move, 1); //630
                         
                         function top_Move(){
                             positionX -= 1;
@@ -52,7 +52,7 @@ function movement(){
 } 
 }
 
-setInterval(movement, 8300);
+setInterval(movement, 3340);
 
 
 
